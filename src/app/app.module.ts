@@ -14,6 +14,7 @@ import { HomeComponent } from './pages/landing-page/home/home.component';
 import { MoviesComponent } from './pages/landing-page/movies/movies.component';
 import { TvShowsComponent } from './pages/landing-page/tv-shows/tv-shows.component';
 import { BookmarkedComponent } from './pages/landing-page/bookmarked/bookmarked.component';
+import { MainPageComponent } from './pages/landing-page/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BookmarkedComponent } from './pages/landing-page/bookmarked/bookmarked.
     HomeComponent,
     MoviesComponent,
     TvShowsComponent,
-    BookmarkedComponent
+    BookmarkedComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

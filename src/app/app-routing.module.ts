@@ -6,17 +6,21 @@ import { HomeComponent } from './pages/landing-page/home/home.component';
 import { MoviesComponent } from './pages/landing-page/movies/movies.component';
 import { TvShowsComponent } from './pages/landing-page/tv-shows/tv-shows.component';
 import { BookmarkedComponent } from './pages/landing-page/bookmarked/bookmarked.component';
+import { MainPageComponent } from './pages/landing-page/main-page/main-page.component';
 
 const routes: Routes = [
   {
-    path: 'Login',
+    path: 'login',
     component: LoginPageComponent,
   },
-  { path: 'Signup', component: SignUpPageComponent },
-  { path: 'Home', component: HomeComponent },
-  { path: 'Movies', component: MoviesComponent },
-  { path: 'Tvshows', component: TvShowsComponent },
-  { path: 'Bookmark', component: BookmarkedComponent },
+  { path: 'signup', component: SignUpPageComponent },
+  { path: 'dashboard', component: MainPageComponent, children: [
+    { path: 'home', component: HomeComponent },
+    { path: 'movies', component: MoviesComponent },
+    { path: 'tvshows', component: TvShowsComponent },
+    { path: 'bookmark', component: BookmarkedComponent },
+  ] },
+
   { path: '', component: LoginPageComponent },
 ];
 
