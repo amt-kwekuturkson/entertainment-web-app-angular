@@ -38,7 +38,7 @@
   height: 1.25rem;
   object-fit: inherit;
 }
-.pages > * > svg:hover {
+.pages a > div > svg:hover {
   cursor: pointer;
   fill: var(--red);
 }
