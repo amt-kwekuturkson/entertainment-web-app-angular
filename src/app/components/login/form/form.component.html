@@ -1,16 +1,31 @@
 <div class="form-container">
   <div class="logo-wrapper"><img src="./assets/logo.svg" alt="app icon" /></div>
   <form>
-    <h1>{{pageName}}</h1>
+    <h1>{{ pageName }}</h1>
     <div class="form-input">
-      <input type="text" placeholder="Email address"/>
-      <input type="password"  placeholder="Password"/>
-      <input type="password"  placeholder="Repeat password" [style.display]='textBoxView'/>
+      <input type="text" placeholder="Email address" />
+      <input type="password" placeholder="Password" />
+      <input
+        type="password"
+        placeholder="Repeat password"
+        [style.display]="textBoxView"
+      />
     </div>
-    <a routerLink="/{{nextPageLink}}" routerLinkActive="active" ariaCurrentWhenActive="page">    <login-button text={{buttonText}}></login-button></a>
+    <a
+      routerLink="/{{ nextPageLink }}"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <login-button text="{{ buttonText }}"></login-button
+    ></a>
     <div class="page-prompt">
-      <p>{{promptText}}</p>
-      <a routerLink="/{{promptLink}}" routerLinkActive="active" ariaCurrentWhenActive="page">{{promptAction}}</a>
+      <p>{{ promptText }}</p>
+      <a
+        routerLink="/{{ promptLink }}"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >{{ promptAction }}</a
+      >
     </div>
   </form>
 </div>

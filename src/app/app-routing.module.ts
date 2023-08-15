@@ -7,25 +7,21 @@ import { MoviesComponent } from './pages/landing-page/movies/movies.component';
 import { TvShowsComponent } from './pages/landing-page/tv-shows/tv-shows.component';
 import { BookmarkedComponent } from './pages/landing-page/bookmarked/bookmarked.component';
 
-const routes: Routes = [{
-  path: 'Login',
-  component: LoginPageComponent},
-  {path: 'Signup',
-  component: SignUpPageComponent},
-  {path: 'Home',
-  component: HomeComponent},
-  {path: 'Movies',
-  component: MoviesComponent},
-  {path: 'Tvshows',
-  component: TvShowsComponent},
-  {path: 'Bookmark',
-  component: BookmarkedComponent},
-  {path: '',
-  component: LoginPageComponent},
+const routes: Routes = [
+  {
+    path: 'Login',
+    component: LoginPageComponent,
+  },
+  { path: 'Signup', component: SignUpPageComponent },
+  { path: 'Home', component: HomeComponent },
+  { path: 'Movies', component: MoviesComponent },
+  { path: 'Tvshows', component: TvShowsComponent },
+  { path: 'Bookmark', component: BookmarkedComponent },
+  { path: '', component: LoginPageComponent },
 ];
- 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
