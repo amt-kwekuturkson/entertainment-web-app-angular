@@ -8,17 +8,17 @@ import { TvShowsComponent } from './pages/landing-page/tv-shows/tv-shows.compone
 import { BookmarkedComponent } from './pages/landing-page/bookmarked/bookmarked.component';
 
 const routes: Routes = [{
-  path: 'login',
+  path: 'Login',
   component: LoginPageComponent},
-  {path: 'signup',
+  {path: 'Signup',
   component: SignUpPageComponent},
-  {path: 'home',
+  {path: 'Home',
   component: HomeComponent},
-  {path: 'movies',
+  {path: 'Movies',
   component: MoviesComponent},
-  {path: 'tvshows',
+  {path: 'Tvshows',
   component: TvShowsComponent},
-  {path: 'bookmark',
+  {path: 'Bookmark',
   component: BookmarkedComponent},
   {path: '',
   component: LoginPageComponent},

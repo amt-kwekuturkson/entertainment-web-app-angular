@@ -12,4 +12,5 @@ button {
 button:hover {
     background-color: var(--pure-white);
     cursor: pointer;
+    color: var(--dark-blue);
 }
