@@ -11,3 +11,7 @@
     --body-large: 0.9375rem;
     -body-small: 0.8125rem;
 }
+
+body {
+    background-color: var(--dark-blue);
+}
