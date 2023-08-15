@@ -1,0 +1,12 @@
+button {
+    height: 3rem;
+    border: none;
+    width: 21rem;
+    border-radius: 0.3125rem;
+    background-color: var(--red);
+}
+
+button:hover {
+    background-color: var(--pure-white);
+    cursor: pointer;
+}
