@@ -1,0 +1,16 @@
+button {
+  height: 3rem;
+  border: none;
+  width: 21rem;
+  border-radius: 0.3125rem;
+  background-color: var(--red);
+  font-size: var(--heading-small);
+  font-weight: lighter;
+  color: var(--pure-white);
+}
+
+button:hover {
+  background-color: var(--pure-white);
+  cursor: pointer;
+  color: var(--dark-blue);
+}
