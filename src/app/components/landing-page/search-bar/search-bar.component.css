@@ -18,12 +18,12 @@
     border: none;
     outline: none;
     padding-bottom: 0.875rem;
-    padding-left: 2.375rem;
 
   }
   .search-input:focus {
     width: 70vw;
     border-bottom: 0.0625rem solid #5a698f;
+    margin-left: 2.875rem;
   }
   .search-input::placeholder {
     color: #ffffff;
@@ -32,7 +32,7 @@
     mix-blend-mode: normal;
     opacity: 0.5;
     font-weight: 18.75rem;
-  
+   margin-left: 2.8rem;
     position: absolute;
   }
   .search-input:hover {
