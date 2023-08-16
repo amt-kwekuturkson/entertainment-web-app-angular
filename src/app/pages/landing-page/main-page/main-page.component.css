@@ -1,0 +1,6 @@
+.page-output {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10.25rem;
+    margin-top: 4rem;
+}
