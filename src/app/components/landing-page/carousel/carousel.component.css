@@ -16,16 +16,10 @@
 }
 .card-details-wrapper {
     display: flex;
-    flex-direction: column;
     position: absolute;
     margin-top: 130px;
     height: 100px;
     width: calc(470px - 24px);
-    justify-content: center;
     padding-left: 24px;
-    gap: 3px;
-}
-.movie-details {
-    display: flex;
-    gap: 5px;
+    align-items: center;
 }
