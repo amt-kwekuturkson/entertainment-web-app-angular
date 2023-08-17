@@ -1,7 +1,11 @@
-<div>
+
   <div class="trending-card">
     <img src='/assets/thumbnails/112/regular/medium.jpg' alt="Movie image"/>
-    <div class="bookmark-mark">
+    
+    <div *ngIf="bookmarkStatus == false"  class="bookmark-mark" (click)="changeState()">
+      <app-bookmark-empty></app-bookmark-empty>
+    </div>
+    <div *ngIf="bookmarkStatus == true"  class="bookmark-mark" (click)="changeState()">
       <app-bookmark-full></app-bookmark-full>
     </div>
     <div class="card-details-wrapper">
@@ -9,4 +13,3 @@
     </div>
   </div>
   
-</div>
