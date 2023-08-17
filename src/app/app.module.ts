@@ -20,6 +20,7 @@ import { MediaDetailsComponent } from './components/landing-page/media-details/m
 import { BookmarkFullComponent } from './components/landing-page/bookmark-full/bookmark-full.component';
 import { BookmarkEmptyComponent } from './components/landing-page/bookmark-empty/bookmark-empty.component';
 import { BookmarkStatusComponent } from './components/landing-page/bookmark-status/bookmark-status.component';
+import { CarouselWheelComponent } from './components/landing-page/carousel-wheel/carousel-wheel.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { BookmarkStatusComponent } from './components/landing-page/bookmark-stat
     MediaDetailsComponent,
     BookmarkFullComponent,
     BookmarkEmptyComponent,
-    BookmarkStatusComponent
+    BookmarkStatusComponent,
+    CarouselWheelComponent
   ],
   imports: [
     BrowserModule,

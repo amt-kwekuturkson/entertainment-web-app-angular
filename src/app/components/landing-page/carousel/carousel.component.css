@@ -6,6 +6,7 @@
     height: 230px;
     object-fit: cover;
     border-radius: 8px;
+    background-color: var(--greyish-blue);
 }
 .bookmark-mark {
     position: absolute;

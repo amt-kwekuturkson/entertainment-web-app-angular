@@ -1,0 +1,10 @@
+.carousel-wheel {
+    gap: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    overflow-x: auto;
+    gap: 40px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}

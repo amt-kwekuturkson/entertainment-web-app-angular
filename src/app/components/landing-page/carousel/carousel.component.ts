@@ -6,8 +6,12 @@ import { Component,Input,OnInit } from '@angular/core';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent implements OnInit{
-@Input() bookmarkStatus?: boolean = true;
-
+@Input() bookmarkStatus?: boolean;
+@Input() mediaTitle?: string;
+@Input() mediaCategory?:string;
+@Input() yearOfRelease?:number;
+@Input() rating?: string;
+@Input() mediaImage?: string;
 ngOnInit(): void {
     
 }

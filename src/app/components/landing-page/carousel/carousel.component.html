@@ -1,7 +1,6 @@
 
   <div class="trending-card">
-    <img src='/assets/thumbnails/112/regular/medium.jpg' alt="Movie image"/>
-    
+    <img src={{mediaImage}} alt="Movie image"/>
     <div *ngIf="bookmarkStatus == false"  class="bookmark-mark" (click)="changeState()">
       <app-bookmark-empty></app-bookmark-empty>
     </div>
@@ -9,7 +8,7 @@
       <app-bookmark-full></app-bookmark-full>
     </div>
     <div class="card-details-wrapper">
-    <app-media-details mediaTitle="Beyond Earth" yearOfRelease="2019" rating="PG" mediaType="Movie"></app-media-details>
+    <app-media-details mediaTitle={{mediaTitle}} yearOfRelease={{yearOfRelease}} rating={{rating}} mediaType={{mediaCategory}}></app-media-details>
     </div>
   </div>
   
