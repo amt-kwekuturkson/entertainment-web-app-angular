@@ -17,6 +17,6 @@ ngOnInit(): void {
 }
 changeState() {
   this.bookmarkStatus = !this.bookmarkStatus;
-  console.log('clicked');
+  console.log(typeof this.bookmarkStatus);
 }
 }

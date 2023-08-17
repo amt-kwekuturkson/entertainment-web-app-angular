@@ -1,18 +1,22 @@
+
+interface regular {
+    small: string,
+    medium: string,
+    large: string
+}
+interface trending {
+    small: string,
+    large: string
+}
 export interface MediaData {
-        title: string,
-        thumbnail: {
-          trending: {
-            small: string,
-            large: string
-          },
-          regular: {
-            small: string
-            medium: string,
-            large: string          }
+        title: string;
+        thumbnail:{
+            trending?: trending,
+            regular: regular
         },
         year: number,
         category:string,
         rating: string,
-        isBookmarked: false,
-        isTrending: boolean
+        isBookmarked: boolean,
+        isTrending: boolean,
       }
