@@ -16,6 +16,10 @@ import { TvShowsComponent } from './pages/landing-page/tv-shows/tv-shows.compone
 import { BookmarkedComponent } from './pages/landing-page/bookmarked/bookmarked.component';
 import { MainPageComponent } from './pages/landing-page/main-page/main-page.component';
 import { CarouselComponent } from './components/landing-page/carousel/carousel.component';
+import { MediaDetailsComponent } from './components/landing-page/media-details/media-details.component';
+import { BookmarkFullComponent } from './components/landing-page/bookmark-full/bookmark-full.component';
+import { BookmarkEmptyComponent } from './components/landing-page/bookmark-empty/bookmark-empty.component';
+import { BookmarkStatusComponent } from './components/landing-page/bookmark-status/bookmark-status.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { CarouselComponent } from './components/landing-page/carousel/carousel.c
     TvShowsComponent,
     BookmarkedComponent,
     MainPageComponent,
-    CarouselComponent
+    CarouselComponent,
+    MediaDetailsComponent,
+    BookmarkFullComponent,
+    BookmarkEmptyComponent,
+    BookmarkStatusComponent
   ],
   imports: [
     BrowserModule,
