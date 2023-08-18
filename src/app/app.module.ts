@@ -21,6 +21,8 @@ import { BookmarkFullComponent } from './components/landing-page/bookmark-full/b
 import { BookmarkEmptyComponent } from './components/landing-page/bookmark-empty/bookmark-empty.component';
 import { BookmarkStatusComponent } from './components/landing-page/bookmark-status/bookmark-status.component';
 import { CarouselWheelComponent } from './components/landing-page/carousel-wheel/carousel-wheel.component';
+import { StandardViewComponent } from './components/landing-page/standard-view/standard-view.component';
+import { StandardCardComponent } from './components/landing-page/standard-card/standard-card.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { CarouselWheelComponent } from './components/landing-page/carousel-wheel
     BookmarkFullComponent,
     BookmarkEmptyComponent,
     BookmarkStatusComponent,
-    CarouselWheelComponent
+    CarouselWheelComponent,
+    StandardViewComponent,
+    StandardCardComponent
   ],
   imports: [
     BrowserModule,

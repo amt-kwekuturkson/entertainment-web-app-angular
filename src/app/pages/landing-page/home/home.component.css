@@ -1,12 +1,9 @@
-.section-title{
-    font-size: var(--heading-large);
+.section-title {
+  font-size: var(--heading-large);
 }
 .top {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-.bottom {
-    margin-bottom: 32px;   
-}
-.trending-view{
-    margin-bottom: 40px;
+.trending-view {
+  margin-bottom: 40px;
 }
