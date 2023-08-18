@@ -10,4 +10,6 @@ export class MediaDetailsComponent {
 @Input() mediaType?:string;
 @Input() yearOfRelease?:string;
 @Input() rating?:string;
+@Input() fontSizeTop?: number;
+@Input() fontSizeBottom?: number;
 }

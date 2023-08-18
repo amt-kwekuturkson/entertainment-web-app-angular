@@ -1,5 +1,5 @@
 <div class="details-container">
-  <div class="media-details">
+  <div class="media-details"  [style.font-size.px]="fontSizeTop">
     <span id="year">{{ yearOfRelease }}</span>
     <li></li>
     <div *ngIf="mediaType == 'Movie'">
@@ -25,5 +25,5 @@
     <li></li>
     <span id="rating">{{ rating }}</span>
   </div>
-  <div id="media-title">{{ mediaTitle }}</div>
+  <div id="media-title"  [style.font-size.px]="fontSizeBottom">{{ mediaTitle }}</div>
 </div>
