@@ -1,3 +1,15 @@
 <div class="standard-view-container">
-      
+  <div *ngFor="let media of mediaFiles">
+    <app-standard-card
+    *ngIf="media.thumbnail.regular"
+    [rating] = "media.rating"
+    [mediaTitle]="media.title"
+    [mediaCategory]="media.category"
+    [yearOfRelease]="media.year"
+   [mediaImage]="media.thumbnail.regular.small"
+   [bookmarkStatus]="media.isBookmarked">
+
+    </app-standard-card>
+  </div>
+
 </div>

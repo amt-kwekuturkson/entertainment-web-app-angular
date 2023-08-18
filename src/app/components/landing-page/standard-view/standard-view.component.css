@@ -1,3 +1,11 @@
 .section-title {
     font-size: var(--heading-large);
   }
+.standard-view-container {
+
+display: flex;
+flex-wrap: wrap;
+ gap: 40px;
+
+ 
+}
