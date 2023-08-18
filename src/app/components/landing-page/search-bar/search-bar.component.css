@@ -4,6 +4,7 @@
     width: 23.8125rem;
     top: 4rem;
     margin-bottom: 2.125rem;
+    background-color: var(--dark-blue);
   }
   .search-input {
     position: absolute;

@@ -1,0 +1,26 @@
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.media-details {
+    display: flex;
+    height: var(--body-large);
+    font-size: var(--body-large);
+    gap: 5px;
+    line-height: 19px;
+    margin-bottom: 3px;
+    font-weight: 300px;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+.media-details > li {
+    width: 3px;
+    height: 3px;
+}
+.media-details > svg {
+    margin-top: 3px;
+}
+#media-title {
+font-size: var(--heading-small);
+}

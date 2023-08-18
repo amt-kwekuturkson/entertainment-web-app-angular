@@ -1,0 +1,20 @@
+.tick {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    border-radius: 50px;
+    background: rgba(16, 20, 30, 0.5); 
+    justify-content: center;
+    align-items: center;
+    
+}
+.tick{
+    stroke: white;
+    fill: none;
+}
+.tick:hover {
+    stroke: black;
+    background-color: white;
+    fill: white;
+}
+

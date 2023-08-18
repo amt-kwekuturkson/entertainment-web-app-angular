@@ -1,0 +1,17 @@
+.carousel-wheel {
+height: 230px;
+ gap: 40px;
+ position: relative;
+ align-items: center;
+ max-width: 90vw;
+ display: grid;
+ grid-auto-flow: column;
+ grid-auto-columns: auto;
+ overflow-x: auto;
+ scroll-behavior: smooth;
+ scroll-snap-type: x mandatory;
+}
+
+.carousel-wheel::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,27 @@
+<div class="trending-card">
+  <img src="{{ mediaImage }}" alt="Movie image" />
+  <div
+    *ngIf="bookmarkStatus == false"
+    class="bookmark-mark"
+    (click)="changeState()"
+  >
+    <app-bookmark-empty></app-bookmark-empty>
+  </div>
+  <div
+    *ngIf="bookmarkStatus == true"
+    class="bookmark-mark"
+    (click)="changeState()"
+  >
+    <app-bookmark-full></app-bookmark-full>
+  </div>
+  <div class="card-details-wrapper">
+    <app-media-details
+      mediaTitle="{{ mediaTitle }}"
+      yearOfRelease="{{ yearOfRelease }}"
+      rating="{{ rating }}"
+      mediaType="{{ mediaCategory }}"
+      [fontSizeTop]="18"
+      [fontSizeBottom]="30"
+    ></app-media-details>
+  </div>
+</div>

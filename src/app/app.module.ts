@@ -15,6 +15,14 @@ import { MoviesComponent } from './pages/landing-page/movies/movies.component';
 import { TvShowsComponent } from './pages/landing-page/tv-shows/tv-shows.component';
 import { BookmarkedComponent } from './pages/landing-page/bookmarked/bookmarked.component';
 import { MainPageComponent } from './pages/landing-page/main-page/main-page.component';
+import { CarouselComponent } from './components/landing-page/carousel/carousel.component';
+import { MediaDetailsComponent } from './components/landing-page/media-details/media-details.component';
+import { BookmarkFullComponent } from './components/landing-page/bookmark-full/bookmark-full.component';
+import { BookmarkEmptyComponent } from './components/landing-page/bookmark-empty/bookmark-empty.component';
+import { BookmarkStatusComponent } from './components/landing-page/bookmark-status/bookmark-status.component';
+import { CarouselWheelComponent } from './components/landing-page/carousel-wheel/carousel-wheel.component';
+import { StandardViewComponent } from './components/landing-page/standard-view/standard-view.component';
+import { StandardCardComponent } from './components/landing-page/standard-card/standard-card.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +38,15 @@ import { MainPageComponent } from './pages/landing-page/main-page/main-page.comp
     MoviesComponent,
     TvShowsComponent,
     BookmarkedComponent,
-    MainPageComponent
+    MainPageComponent,
+    CarouselComponent,
+    MediaDetailsComponent,
+    BookmarkFullComponent,
+    BookmarkEmptyComponent,
+    BookmarkStatusComponent,
+    CarouselWheelComponent,
+    StandardViewComponent,
+    StandardCardComponent
   ],
   imports: [
     BrowserModule,
