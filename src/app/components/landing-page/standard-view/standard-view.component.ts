@@ -465,4 +465,7 @@ export class StandardViewComponent {
       "isTrending": false
     }
   ]
+
+  normalFiles:MediaData[] = this.mediaFiles.filter(x => x.isTrending === false );
+
 }
