@@ -1,5 +1,5 @@
 .side-bar {
-  position: absolute;
+  position: fixed;
   width: 6rem;
   height: 48rem;
   background-color: var(--semi-dark-blue);
