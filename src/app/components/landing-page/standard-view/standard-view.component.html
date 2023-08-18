@@ -1,13 +1,12 @@
 <div class="standard-view-container">
-  <div *ngFor="let media of mediaFiles">
+  <div *ngFor="let normal of normalFiles">
     <app-standard-card
-    *ngIf="media.thumbnail"
-    [rating] = "media.rating"
-    [mediaTitle]="media.title"
-    [mediaCategory]="media.category"
-    [yearOfRelease]="media.year"
-   [mediaImage]="media.thumbnail.regular.small"
-   [bookmarkStatus]="media.isBookmarked">
+    [rating] = "normal.rating"
+    [mediaTitle]="normal.title"
+    [mediaCategory]="normal.category"
+    [yearOfRelease]="normal.year"
+   [mediaImage]="normal.thumbnail.regular.small"
+   [bookmarkStatus]="normal.isBookmarked">
 
     </app-standard-card>
   </div>
