@@ -1,1 +1,15 @@
-<p>bookmarked works!</p>
+<div>
+    <h1 class="section-title">TV Series</h1>
+    <div class="standard-view-container">
+        <div *ngFor="let normal of normalFiles">
+            <app-standard-card
+            [rating] = "normal.rating"
+            [mediaTitle]="normal.title"
+            [mediaCategory]="normal.category"
+            [yearOfRelease]="normal.year"
+           [mediaImage]="normal.thumbnail.regular.small"
+           [bookmarkStatus]="normal.isBookmarked">
+        
+            </app-standard-card>
+          </div>
+    </div>
