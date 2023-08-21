@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MediaData } from 'src/app/interface';
+import { MediaData } from 'src/app/types/interface';
 
 @Component({
   selector: 'app-tv-shows',
