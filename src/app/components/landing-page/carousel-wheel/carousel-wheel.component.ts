@@ -8,7 +8,6 @@ import { MediaData } from 'src/app/types/interface';
 })
 export class CarouselWheelComponent {
 
-  mediaFiles: MediaData[] =
   [
     {
       "title": "Beyond Earth",
