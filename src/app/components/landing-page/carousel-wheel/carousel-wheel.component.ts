@@ -14,7 +14,7 @@ mediaFiles: MediaData[] = [];
 constructor(private mediaService: mediaService){}
 
 ngOnInit(): void {
-this.mediaService.getMedia().subscribe((tasks) => (this.mediaFiles = MEDIA));
+this.mediaService.getMedia().subscribe((medias) => (this.mediaFiles = medias));
 }
 
 }
