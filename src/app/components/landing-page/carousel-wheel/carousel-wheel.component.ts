@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { MediaData } from 'src/app/types/interface';
-import { MEDIA } from 'src/app/media';
 import { mediaService } from '../../../services/media.service';
+import { MediaDataService } from 'src/app/services/media-data.service';
 @Component({
   selector: 'carousel-wheel',
   templateUrl: './carousel-wheel.component.html',
@@ -11,10 +11,12 @@ export class CarouselWheelComponent implements OnInit{
   
 mediaFiles: MediaData[] = [];
 
-constructor(private mediaService: mediaService){}
+constructor(private mediaDataService: MediaDataService){}
 
 ngOnInit(): void {
-this.mediaService.getMedia().subscribe((medias) => (this.mediaFiles = medias));
+this.mediaDataService.getMedia().subscribe((media) => (this.mediaFiles = media));
 }
+
+
 
 }
