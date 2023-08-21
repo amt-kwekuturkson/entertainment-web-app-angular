@@ -17,6 +17,9 @@ ngOnInit(): void {
 this.mediaDataService.getMedia().subscribe((media) => (this.mediaFiles = media));
 }
 
-
+toggleBookmark(media: MediaData) {
+  media.isBookmarked = !media.isBookmarked;
+this.mediaDataService.bookmarkToggle(media).subscribe();
+}
 
 }

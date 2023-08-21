@@ -1,4 +1,5 @@
-import { Component,Input,OnInit } from '@angular/core';
+import { Component,Input,OnInit,Output,EventEmitter } from '@angular/core';
+import { MediaData } from 'src/app/types/interface';
 
 @Component({
   selector: 'app-carousel',
@@ -12,11 +13,15 @@ export class CarouselComponent implements OnInit{
 @Input() yearOfRelease?:number;
 @Input() rating?: string;
 @Input() mediaImage?: string;
-ngOnInit(): void {
-    
+@Input() media: MediaData | undefined;
+
+@Output() onToggleBookmark: EventEmitter<MediaData> = new EventEmitter();
+
+constructor() {}
+ngOnInit(): void { 
 }
-changeState() {
-  this.bookmarkStatus = !this.bookmarkStatus;
-  console.log(typeof this.bookmarkStatus);
+
+onChangeState(media: MediaData | undefined) {
+  this.onToggleBookmark.emit(media);
 }
 }

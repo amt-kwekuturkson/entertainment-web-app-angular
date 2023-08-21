@@ -8,6 +8,7 @@
     [yearOfRelease]="media.year"
    [mediaImage]="media.thumbnail.trending.large"
    [bookmarkStatus]="media.isBookmarked"
+   (onToggleBookmark)="toggleBookmark(media)"
   ></app-carousel>
 </div>
 </div>

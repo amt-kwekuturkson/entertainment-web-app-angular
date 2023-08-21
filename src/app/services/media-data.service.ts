@@ -3,6 +3,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, catchError } from 'rxjs';
 import { MediaData } from '../types/interface';
 
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type' : 'application/json'
+  })
+}
 @Injectable({
   providedIn: 'root'
 })
@@ -15,7 +20,7 @@ private apiURL = ' http://localhost:5000/media'
   }
   
   bookmarkToggle(media: MediaData): Observable<MediaData> {
-    const url = `${this.apiURL}/${media.isBookmarked}`;
-    return this.http.put<MediaData>(this.apiURL, media).pipe();
+    const url = `${this.apiURL}/${media.title}`;
+    return this.http.put<MediaData>(url, media, httpOptions);
   }
 }

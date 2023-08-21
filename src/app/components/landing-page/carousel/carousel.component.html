@@ -3,14 +3,14 @@
   <div
     *ngIf="bookmarkStatus == false"
     class="bookmark-mark"
-    (click)="changeState()"
+    (click)="onChangeState(media)"
   >
     <app-bookmark-empty></app-bookmark-empty>
   </div>
   <div
     *ngIf="bookmarkStatus == true"
     class="bookmark-mark"
-    (click)="changeState()"
+    (click)="onChangeState(media)"
   >
     <app-bookmark-full></app-bookmark-full>
   </div>
