@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { MediaData } from '../types/interface';
 import { MEDIA } from '../media';
 @Injectable({
@@ -10,7 +10,8 @@ export class mediaService {
 
   constructor(){}
 
-  getMedia(): MediaData[] {
-    return MEDIA;
+  getMedia(): Observable<MediaData[]> {
+    const medias = of(MEDIA);
+    return medias;
   }
 }
