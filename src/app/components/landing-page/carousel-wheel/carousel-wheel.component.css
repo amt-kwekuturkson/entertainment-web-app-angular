@@ -10,6 +10,7 @@ height: 230px;
  overflow-x: auto;
  scroll-behavior: smooth;
  scroll-snap-type: x mandatory;
+ 
 }
 
 .carousel-wheel::-webkit-scrollbar {
