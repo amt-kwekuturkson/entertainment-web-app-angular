@@ -1,0 +1,14 @@
+<div class="carousel-wheel">
+<div  *ngFor="let media of mediaFiles">
+  <app-carousel
+    *ngIf="media.thumbnail.trending"
+    [rating] = "media.rating"
+    [mediaTitle]="media.title"
+    [mediaCategory]="media.category"
+    [yearOfRelease]="media.year"
+   [mediaImage]="media.thumbnail.trending.large"
+   [bookmarkStatus]="media.isBookmarked"
+   (onToggleBookmark)="toggleBookmark(media)"
+  ></app-carousel>
+</div>
+</div>

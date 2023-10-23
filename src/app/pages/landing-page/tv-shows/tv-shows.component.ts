@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MEDIA } from 'src/app/media';
+import { MediaData } from 'src/app/types/interface';
 
 @Component({
   selector: 'app-tv-shows',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./tv-shows.component.css']
 })
 export class TvShowsComponent {
-
+mediaFiles: MediaData[] = MEDIA;
+normalFiles: MediaData[] = this.mediaFiles.filter(x => x.category === "TV Series");
 }

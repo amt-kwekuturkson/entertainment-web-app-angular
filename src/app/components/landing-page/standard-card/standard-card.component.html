@@ -1,0 +1,31 @@
+
+<div class="standard-card">
+    <div class="image-wrapper">
+        <img src="{{ mediaImage }}" alt="Movie image" />
+    </div>
+
+  <div
+    *ngIf="bookmarkStatus == false"
+    class="bookmark-mark"
+    (click)="changeState()"
+  >
+    <app-bookmark-empty></app-bookmark-empty>
+  </div>
+  <div
+    *ngIf="bookmarkStatus == true"
+    class="bookmark-mark"
+    (click)="changeState()"
+  >
+    <app-bookmark-full></app-bookmark-full>
+  </div>
+  <div class="card-details-wrapper">
+    <app-media-details
+    mediaTitle="{{ mediaTitle }}"
+    yearOfRelease="{{ yearOfRelease }}"
+    rating="{{ rating }}"
+    mediaType="{{ mediaCategory }}"
+      [fontSizeTop]="15"
+      [fontSizeBottom]="20"
+    ></app-media-details>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.standard-card {
+  display: flex;
+  width: 280px;
+  height: 226px;
+}
+.image-wrapper {
+  width: 280px;
+  height: 174px;
+}
+.image-wrapper > img {
+  width: 280px;
+  height: 174px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: var(--greyish-blue);
+}
+.bookmark-mark {
+  position: absolute;
+  margin-left: 232px;
+  margin-right: 24px;
+  z-index: 1;
+  margin-top: 20px;
+}
+.card-details-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 150px;
+  height: 100px;
+  width: calc(470px - 24px);
+  align-items: center;
+}
+
+.card-details-wrapper > * {
+  font-size: 20px;
+}
