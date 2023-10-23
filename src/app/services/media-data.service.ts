@@ -20,7 +20,7 @@ private apiURL = ' http://localhost:5000/media'
   }
   
   bookmarkToggle(media: MediaData): Observable<MediaData> {
-    const url = `${this.apiURL}/${media.title}`;
+    const url = `${this.apiURL}/${media.id}`;
     return this.http.put<MediaData>(url, media, httpOptions);
   }
 }
